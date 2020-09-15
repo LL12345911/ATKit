@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 
-   s.name         = 'AAChaATKitrtKit'
+   s.name         = 'ATKit'
     s.version      = '1.0'
     s.summary      = '的信息图图表,完全满足工作所需.'
     s.description  = <<-DESC 
