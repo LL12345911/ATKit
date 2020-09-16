@@ -8,7 +8,6 @@
 
 #import "NSObject+ATAlert.h"
 #import <objc/runtime.h>
-#import "AppDelegate.h"
 #import "ATMacro.h"
 ///**
 // * 设置颜色

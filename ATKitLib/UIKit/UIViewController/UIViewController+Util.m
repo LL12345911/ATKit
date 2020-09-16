@@ -12,7 +12,6 @@
 #import "UINavigationBar+NavBar.h"
 
 #import <objc/runtime.h>
-#import "AppDelegate.h"
 
     //定义常量 必须是C语言字符串
 static char *IndicatorBackViewKey = "IndicatorBackViewKey";

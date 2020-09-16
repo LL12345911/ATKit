@@ -9,7 +9,6 @@
 #import "UIView+Util.h"
 #import <objc/objc.h>
 #import <objc/runtime.h>
-#import "AppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIView+Frame.h"
 //定义常量 必须是C语言字符串
@@ -424,8 +423,10 @@ float radiansForDegress(int degrees){
 }
 
 - (UIViewController *)currentViewController {
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;;
-    return [self getCurrentViewController:appDelegate.window.rootViewController];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    return [self getCurrentViewController:window.rootViewController];
+//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;;
+//    return [self getCurrentViewController:appDelegate.window.rootViewController];
 }
 
 //递归查找
