@@ -26,7 +26,6 @@
 		4152DDF225109FD000D35582 /* UIScrollView+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD1525109FD000D35582 /* UIScrollView+ATKit.m */; };
 		4152DDF325109FD000D35582 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD1925109FD000D35582 /* Toast.m */; };
 		4152DDF425109FD000D35582 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD1A25109FD000D35582 /* Helper.m */; };
-		4152DDF525109FD000D35582 /* HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD1C25109FD000D35582 /* HUDTools.m */; };
 		4152DDF625109FD000D35582 /* AlignmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD2125109FD000D35582 /* AlignmentLabel.m */; };
 		4152DDF725109FD000D35582 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD2325109FD000D35582 /* UILabel+Category.m */; };
 		4152DDF825109FD000D35582 /* UILabel+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD2425109FD000D35582 /* UILabel+ATKit.m */; };
@@ -91,6 +90,7 @@
 		4152DE4725109FD000D35582 /* OpenShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDE725109FD000D35582 /* OpenShareManager.m */; };
 		4152DE4C2510B29900D35582 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152DE4B2510B29900D35582 /* CoreGraphics.framework */; };
 		4152DE502510B82D00D35582 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DE4F2510B82D00D35582 /* MBProgressHUD.m */; };
+		41E073DC2511AE87004DBFFE /* HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E073DB2511AE87004DBFFE /* HUDTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,11 +145,9 @@
 		4152DD1425109FD000D35582 /* UIScrollView+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ATKit.h"; sourceTree = "<group>"; };
 		4152DD1525109FD000D35582 /* UIScrollView+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ATKit.m"; sourceTree = "<group>"; };
 		4152DD1725109FD000D35582 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
-		4152DD1825109FD000D35582 /* HUDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDTools.h; sourceTree = "<group>"; };
 		4152DD1925109FD000D35582 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		4152DD1A25109FD000D35582 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		4152DD1B25109FD000D35582 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
-		4152DD1C25109FD000D35582 /* HUDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDTools.m; sourceTree = "<group>"; };
 		4152DD1E25109FD000D35582 /* STTweetLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTweetLabel.h; sourceTree = "<group>"; };
 		4152DD1F25109FD000D35582 /* UILabel+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ATKit.h"; sourceTree = "<group>"; };
 		4152DD2025109FD000D35582 /* AngleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleView.h; sourceTree = "<group>"; };
@@ -281,6 +279,8 @@
 		4152DE4B2510B29900D35582 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4152DE4E2510B82D00D35582 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4152DE4F2510B82D00D35582 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		41E073DA2511AE7E004DBFFE /* HUDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDTools.h; sourceTree = "<group>"; };
+		41E073DB2511AE87004DBFFE /* HUDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,8 +454,8 @@
 			children = (
 				4152DD1725109FD000D35582 /* Helper.h */,
 				4152DD1A25109FD000D35582 /* Helper.m */,
-				4152DD1825109FD000D35582 /* HUDTools.h */,
-				4152DD1C25109FD000D35582 /* HUDTools.m */,
+				41E073DA2511AE7E004DBFFE /* HUDTools.h */,
+				41E073DB2511AE87004DBFFE /* HUDTools.m */,
 				4152DD1B25109FD000D35582 /* Toast.h */,
 				4152DD1925109FD000D35582 /* Toast.m */,
 			);
@@ -982,6 +982,7 @@
 				4152DDF425109FD000D35582 /* Helper.m in Sources */,
 				4152DDED25109FD000D35582 /* UIImage+ATKit.m in Sources */,
 				4152DE4325109FD000D35582 /* ATMacro.m in Sources */,
+				41E073DC2511AE87004DBFFE /* HUDTools.m in Sources */,
 				4152DE1925109FD000D35582 /* UIViewController+Util.m in Sources */,
 				4152DE0D25109FD000D35582 /* UIBarButtonItem+ATCreate.m in Sources */,
 				4152DE1825109FD000D35582 /* UIViewController+ATKit.m in Sources */,
@@ -994,7 +995,6 @@
 				4152DE3F25109FD000D35582 /* GCDThrottle.m in Sources */,
 				4152DE502510B82D00D35582 /* MBProgressHUD.m in Sources */,
 				4152DE3925109FD000D35582 /* NSString+Number.m in Sources */,
-				4152DDF525109FD000D35582 /* HUDTools.m in Sources */,
 				4152DE4725109FD000D35582 /* OpenShareManager.m in Sources */,
 				4152DE3E25109FD000D35582 /* NSObject+ATKVOBlocks.m in Sources */,
 				4152DE0225109FD000D35582 /* ATCustomButton.m in Sources */,

@@ -18,23 +18,6 @@ static NSString * const USER_CanOpenApp = @"user_CanOpenApp"; //1 是从其他AP
 static NSString * const USER_AppName = @"user_AppName"; //从哪个APP打开
 
 
-//是否开启采集服务
-static NSString * const StartTrackServerNSNoti = @"startTrackServerNSNotificationCenter";
-//通知开启鹰眼服务
-static NSString * const StartBTKServerNSNoti = @"startBTKServerNSNotificationCenter";
-
-//鹰眼采集服务是否已经开启 1采集已经开启 0采集开启失败
-static NSString * const TrackServerFlag = @"TrackServerFlag";
-//鹰眼服务是否已经开启 1已经开启 0采集开启失败
-static NSString * const BTKServerFlag = @"BTKServerFlag";
-//通知 鹰眼服务 和 采集 状态的变化
-static NSString * const TrackServerStatus = @"TrackServerStatus";
-
-//查询半径
-static NSString * const User_Distance = @"User_Distance";
-
-
-
 @interface Helper : NSObject
 
 /**
