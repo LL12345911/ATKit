@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'AuthorizationManager' do |ss|
    # ss.source_files = 'ATKitLib/AFURL{Request,Response}Serialization.{h,m}'
-    ss.source_files = 'ATKitLib/AuthorizationManager/*.{h,m}'
+    ss.source_files = 'ATKitLib/AuthorizationManager/*.{h,m}','ATKitLib/AuthorizationManager/**/*.{h,m}'
   end
 
   s.subspec 'ExceptionHandler' do |ss|
