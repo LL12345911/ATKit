@@ -50,11 +50,11 @@ Pod::Spec.new do |s|
 
 
   s.subspec 'UIKit' do |ss|
-    ss.source_files = 'ATKitLib/UIKit/*.{h,m}', 'ATKitLib/UIKit/UIKitMacro.h'
+    ss.source_files = 'ATKitLib/UIKit/**/*.{h,m}', 'ATKitLib/UIKit/UIKitMacro.h'
   end
 
   s.subspec 'Foundation' do |ss|
-    ss.source_files = 'ATKitLib/Foundation/*.{h,m}', 'ATKitLib/Foundation/FoundationMacro.h', 'ATKitLib/Foundation/JsonTransform.h'
+    ss.source_files = 'ATKitLib/Foundation/**/*.{h,m}', 'ATKitLib/Foundation/FoundationMacro.h', 'ATKitLib/Foundation/JsonTransform.h'
   end
     s.requires_arc = true
     s.ios.frameworks = 'UIKit'
