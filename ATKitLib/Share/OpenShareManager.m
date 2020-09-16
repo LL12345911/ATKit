@@ -8,8 +8,6 @@
 
 #import "OpenShareManager.h"
 #import <Social/Social.h>
-#import "HUDTools.h"
-#import "ATMacro.h"
 //#import "LWShareService.h"
 //#import "OpenShareHeader.h"
 
@@ -40,10 +38,10 @@
 }
 
 //邀请加入
-+ (void)invitedToJoinUs:(NSString *)linkUrl desc:(NSString *)desc{
++ (void)invitedToJoinUs:(NSString *)linkUrl desc:(NSString *)desc image:(NSString *)imageName{
     
-    NSString *shareTitle = [NSString stringWithFormat:@"卡罗影像项目加入邀请\n%@",desc];;
-    UIImage *shareImage = [UIImage imageNamed:@"denglu_logo"];
+    NSString *shareTitle = [NSString stringWithFormat:@"%@",desc];;
+    UIImage *shareImage = [UIImage imageNamed:imageName];
     NSURL *shareUrl = [NSURL URLWithString:linkUrl];
     NSArray *activityItems = @[@"",shareTitle,shareImage,shareUrl];
     
@@ -75,17 +73,15 @@
     } else {
         [[OpenShareManager currentVC] presentViewController:activityVC animated:YES completion:nil];
     }
-    
-   // [[self currentViewController] presentViewController:activityVC animated:YES completion:nil];
 }
 
-//邀请加入
-+ (void)shareMessage_LinkUrl:(NSString *)linkUrl title:(NSString *)title{
-
-    UIImage *shareImage = [UIImage imageNamed:@"denglu_logo"];
-    [self shareMessage_LinkUrl:linkUrl title:title image:shareImage];
-    
-}
+////邀请加入
+//+ (void)shareMessage_LinkUrl:(NSString *)linkUrl title:(NSString *)title{
+//
+//    UIImage *shareImage = [UIImage imageNamed:@"denglu_logo"];
+//    [self shareMessage_LinkUrl:linkUrl title:title image:shareImage];
+//
+//}
 
 
 + (void)shareMessage_LinkUrl:(NSString *)linkUrl title:(NSString *)title image:(UIImage *)image{
@@ -124,8 +120,6 @@
     } else {
         [[OpenShareManager currentVC] presentViewController:activityVC animated:YES completion:nil];
     }
-    
-    // [[self currentViewController] presentViewController:activityVC animated:YES completion:nil];
 }
 
 
@@ -164,8 +158,6 @@
     } else {
         [[OpenShareManager currentVC] presentViewController:activityVC animated:YES completion:nil];
     }
-    
-    // [[self currentViewController] presentViewController:activityVC animated:YES completion:nil];
 }
 
 

@@ -350,7 +350,7 @@
 		4152DCBB25109C6A00D35582 = {
 			isa = PBXGroup;
 			children = (
-				4152DCFE25109FD000D35582 /* ATKit */,
+				4152DCFE25109FD000D35582 /* ATKitLib */,
 				4152DCC625109C6A00D35582 /* ATKitDemo */,
 				4152DCE225109C7000D35582 /* ATKitTests */,
 				4152DCED25109C7000D35582 /* ATKitUITests */,
@@ -407,7 +407,7 @@
 			path = ATKitUITests;
 			sourceTree = "<group>";
 		};
-		4152DCFE25109FD000D35582 /* ATKit */ = {
+		4152DCFE25109FD000D35582 /* ATKitLib */ = {
 			isa = PBXGroup;
 			children = (
 				4152DDA025109FD000D35582 /* DarkMode */,
@@ -419,7 +419,7 @@
 				4152DDE125109FD000D35582 /* Thread */,
 				4152DD0325109FD000D35582 /* UIKit */,
 			);
-			path = ATKit;
+			path = ATKitLib;
 			sourceTree = "<group>";
 		};
 		4152DCFF25109FD000D35582 /* EventBus */ = {
