@@ -8,8 +8,8 @@
 
 #import "OpenShareManager.h"
 #import <Social/Social.h>
-#import "HUDTools.h"
 #import "ATMacro.h"
+#import "Toast.h"
 
 //#import "LWShareService.h"
 //#import "OpenShareHeader.h"
@@ -56,10 +56,10 @@
     UIActivityViewControllerCompletionWithItemsHandler myBlock = ^(UIActivityType __nullable activityType, BOOL completed, NSArray * __nullable returnedItems, NSError * __nullable activityError){
         if (completed) {
             //分享完成
-            [HUDTools showText:@"分享成功"];
+            [Toast showWithText:@"分享成功"];
         }else{
             //分享失败
-            [HUDTools showText:@"分享失败"];
+            [Toast showWithText:@"分享失败"];
         }
         
         [activityVC dismissViewControllerAnimated:YES completion:nil];
@@ -103,10 +103,10 @@
     UIActivityViewControllerCompletionWithItemsHandler myBlock = ^(UIActivityType __nullable activityType, BOOL completed, NSArray * __nullable returnedItems, NSError * __nullable activityError){
         if (completed) {
             //分享完成
-            [HUDTools showText:@"分享成功"];
+            [Toast showWithText:@"分享成功"];
         }else{
             //分享失败
-            [HUDTools showText:@"分享失败"];
+            [Toast showWithText:@"分享失败"];
         }
         
         [activityVC dismissViewControllerAnimated:YES completion:nil];
@@ -141,10 +141,10 @@
     UIActivityViewControllerCompletionWithItemsHandler myBlock = ^(UIActivityType __nullable activityType, BOOL completed, NSArray * __nullable returnedItems, NSError * __nullable activityError){
         if (completed) {
             //分享完成
-            [HUDTools showText:@"分享成功"];
+            [Toast showWithText:@"分享成功"];
         }else{
             //分享失败
-            [HUDTools showText:@"分享失败"];
+            [Toast showWithText:@"分享失败"];
         }
         
         [activityVC dismissViewControllerAnimated:YES completion:nil];
