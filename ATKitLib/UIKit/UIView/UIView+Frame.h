@@ -45,13 +45,6 @@
 ////加载同名的xib
 //+ (instancetype)viewFromXib;
 
-/** 判断两个视图在同一窗口是否有重叠 */
-- (BOOL)intersectWithView:(UIView *)view;
-
-
-#pragma mark - 实现虚线功能  -
-- (void)addBorderDottedLinewithColor:(UIColor *)color;
-
 
 /**
  是否在屏幕中，即是否在可显示层级中
@@ -60,10 +53,6 @@
  */
 @property (nonatomic ,assign ,readonly,getter=isInScreen) BOOL inScreen;
 
-/**
- 获取当前view所属控制器
- */
-@property (nonatomic ,strong ,readonly) UIViewController * viewController;
 
 /**
  以递归的方式遍历(查找)subview

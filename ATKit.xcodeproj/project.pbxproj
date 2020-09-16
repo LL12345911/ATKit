@@ -43,7 +43,6 @@
 		4152DE0A25109FD000D35582 /* RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD4B25109FD000D35582 /* RuntimeKit.m */; };
 		4152DE0B25109FD000D35582 /* UINavigationSXFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD5125109FD000D35582 /* UINavigationSXFixSpace.m */; };
 		4152DE0C25109FD000D35582 /* UIBarButtonItem+SXCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD5225109FD000D35582 /* UIBarButtonItem+SXCreate.m */; };
-		4152DE0D25109FD000D35582 /* UIBarButtonItem+ATCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD5325109FD000D35582 /* UIBarButtonItem+ATCreate.m */; };
 		4152DE0E25109FD000D35582 /* UINavigationBar+NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD5625109FD000D35582 /* UINavigationBar+NavBar.m */; };
 		4152DE0F25109FD000D35582 /* MarsTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD5925109FD000D35582 /* MarsTabBar.m */; };
 		4152DE1025109FD000D35582 /* ATPlaceholdTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DD5C25109FD000D35582 /* ATPlaceholdTextView.m */; };
@@ -190,9 +189,7 @@
 		4152DD5025109FD000D35582 /* UIBarButtonItem+SXCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SXCreate.h"; sourceTree = "<group>"; };
 		4152DD5125109FD000D35582 /* UINavigationSXFixSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationSXFixSpace.m; sourceTree = "<group>"; };
 		4152DD5225109FD000D35582 /* UIBarButtonItem+SXCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SXCreate.m"; sourceTree = "<group>"; };
-		4152DD5325109FD000D35582 /* UIBarButtonItem+ATCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ATCreate.m"; sourceTree = "<group>"; };
 		4152DD5425109FD000D35582 /* UINavigationBar+NavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavBar.h"; sourceTree = "<group>"; };
-		4152DD5525109FD000D35582 /* UIBarButtonItem+ATCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ATCreate.h"; sourceTree = "<group>"; };
 		4152DD5625109FD000D35582 /* UINavigationBar+NavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavBar.m"; sourceTree = "<group>"; };
 		4152DD5825109FD000D35582 /* MarsTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarsTabBar.h; sourceTree = "<group>"; };
 		4152DD5925109FD000D35582 /* MarsTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarsTabBar.m; sourceTree = "<group>"; };
@@ -554,9 +551,7 @@
 			isa = PBXGroup;
 			children = (
 				4152DD4E25109FD000D35582 /* UINavigation-SXFixSpace */,
-				4152DD5325109FD000D35582 /* UIBarButtonItem+ATCreate.m */,
 				4152DD5425109FD000D35582 /* UINavigationBar+NavBar.h */,
-				4152DD5525109FD000D35582 /* UIBarButtonItem+ATCreate.h */,
 				4152DD5625109FD000D35582 /* UINavigationBar+NavBar.m */,
 			);
 			path = UINavigation;
@@ -565,10 +560,10 @@
 		4152DD4E25109FD000D35582 /* UINavigation-SXFixSpace */ = {
 			isa = PBXGroup;
 			children = (
-				4152DD4F25109FD000D35582 /* UINavigationSXFixSpace.h */,
 				4152DD5025109FD000D35582 /* UIBarButtonItem+SXCreate.h */,
-				4152DD5125109FD000D35582 /* UINavigationSXFixSpace.m */,
 				4152DD5225109FD000D35582 /* UIBarButtonItem+SXCreate.m */,
+				4152DD4F25109FD000D35582 /* UINavigationSXFixSpace.h */,
+				4152DD5125109FD000D35582 /* UINavigationSXFixSpace.m */,
 			);
 			path = "UINavigation-SXFixSpace";
 			sourceTree = "<group>";
@@ -1055,7 +1050,6 @@
 				4152DDED25109FD000D35582 /* UIImage+ATKit.m in Sources */,
 				4152DE4325109FD000D35582 /* ATMacro.m in Sources */,
 				4152DE1925109FD000D35582 /* UIViewController+Util.m in Sources */,
-				4152DE0D25109FD000D35582 /* UIBarButtonItem+ATCreate.m in Sources */,
 				4152DE1825109FD000D35582 /* UIViewController+ATKit.m in Sources */,
 				4152DE4625109FD000D35582 /* Scheduler.m in Sources */,
 				4152DE3125109FD000D35582 /* NSMutableDictionary+ATKit.m in Sources */,

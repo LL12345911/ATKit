@@ -178,51 +178,6 @@
 }
 
 
-//判断两个视图在同一窗口是否有重叠
-- (BOOL)intersectWithView:(UIView *)view{
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    CGRect selfRect = [self convertRect:self.bounds toView:window];
-    CGRect viewRect = [view convertRect:view.bounds toView:window];
-    return CGRectIntersectsRect(selfRect, viewRect);
-}
-
-
-
-
-#pragma mark - 实现虚线功能  -
-- (void)addBorderDottedLinewithColor:(UIColor *)color {
-    
-    CAShapeLayer *border = [CAShapeLayer layer];
-    //  线条颜色
-    border.strokeColor = color.CGColor;
-    
-    border.fillColor = nil;
-    
-    
-    UIBezierPath *pat = [UIBezierPath bezierPath];
-    [pat moveToPoint:CGPointMake(0, 0)];
-    if (CGRectGetWidth(self.frame) > CGRectGetHeight(self.frame)) {
-        [pat addLineToPoint:CGPointMake(self.bounds.size.width, 0)];
-    }else{
-        [pat addLineToPoint:CGPointMake(0, self.bounds.size.height)];
-    }
-    border.path = pat.CGPath;
-    
-    border.frame = self.bounds;
-    
-    // 不要设太大 不然看不出效果
-    border.lineWidth = 0.5;
-    border.lineCap = @"butt";
-    
-    //  第一个是 线条长度   第二个是间距    nil时为实线
-    border.lineDashPattern = @[@4, @3];
-    
-    [self.layer addSublayer:border];
-    
-    
-}
-
-
 -(BOOL)isInScreen {
     SEL selec = NSSelectorFromString(@"_isInVisibleHierarchy");
     NSMethodSignature * sign = [[UIView class] instanceMethodSignatureForSelector:selec];
@@ -236,15 +191,6 @@
     return visible;
 }
 
-- (UIViewController*)viewController {
-    for (UIView* next = self; next; next = next.superview) {
-        UIResponder* nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController*)nextResponder;
-        }
-    }
-    return nil;
-}
 /**
  以递归的方式遍历(查找)subview
  Return YES from the block to recurse into the subview.
