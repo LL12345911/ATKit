@@ -8,6 +8,9 @@
 
 #import "OpenShareManager.h"
 #import <Social/Social.h>
+#import "HUDTools.h"
+#import "ATMacro.h"
+
 //#import "LWShareService.h"
 //#import "OpenShareHeader.h"
 
