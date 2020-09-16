@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Share' do |ss|
    # ss.source_files = 'ATKitLib/AFURL{Request,Response}Serialization.{h,m}'
-    ss.source_files = 'ATKitLib/OpenShareManager.{h,m}'
+    ss.source_files = 'ATKitLib/Share/*.{h,m}'
   end
 
   s.subspec 'MessageCenter' do |ss|
