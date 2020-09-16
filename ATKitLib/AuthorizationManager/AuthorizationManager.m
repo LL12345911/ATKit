@@ -37,7 +37,7 @@
 
 //@interface AuthorizationHealthManager : NSObject
 //
-//- (void)_requestHealthAuthorizationWithShareTypes:(nullable NSSet<HKSampleType *> *)typesToShare
+//- (void)requestHealthAuthorizationWithShareTypes:(nullable NSSet<HKSampleType *> *)typesToShare
 //                                          readTypes:(nullable NSSet<HKObjectType *> *)typesToRead
 //                                  authorizedHandler:(GeneralAuthorizationCompletion)authorizedHandler
 //                                unAuthorizedHandler:(GeneralAuthorizationCompletion)unAuthorizedHandler;
@@ -45,7 +45,7 @@
 
 //@implementation AuthorizationHealthManager
 //
-//- (void)_requestHealthAuthorizationWithShareTypes:(nullable NSSet<HKSampleType *> *)typesToShare
+//- (void)requestHealthAuthorizationWithShareTypes:(nullable NSSet<HKSampleType *> *)typesToShare
 //                                          readTypes:(nullable NSSet<HKObjectType *> *)typesToRead
 //                                  authorizedHandler:(GeneralAuthorizationCompletion)authorizedHandler
 //                                unAuthorizedHandler:(GeneralAuthorizationCompletion)unAuthorizedHandler{
@@ -179,7 +179,7 @@ static NSString *const RequestNotificationsKey = @"_requestedNotifications";
 //    return _accounStore;
 //}
 
-- (void)_requestAuthorizationWithAuthorizationType:(AuthorizationType)authorizationType
+- (void)requestAuthorizationWithAuthorizationType:(AuthorizationType)authorizationType
                                    authorizedHandler:(GeneralAuthorizationCompletion)authorizedHandler
                                  unAuthorizedHandler:(GeneralAuthorizationCompletion)unAuthorizedHandler{
     switch (authorizationType) {
@@ -256,7 +256,7 @@ static NSString *const RequestNotificationsKey = @"_requestedNotifications";
     }
 }
 
-//- (void)_requestHealthAuthorizationWithShareTypes:(NSSet*)typesToShare
+//- (void)requestHealthAuthorizationWithShareTypes:(NSSet*)typesToShare
 //                                          readTypes:(NSSet*)typesToRead
 //                                  authorizedHandler:(GeneralAuthorizationCompletion)authorizedHandler
 //                                unAuthorizedHandler:(GeneralAuthorizationCompletion)unAuthorizedHandler{

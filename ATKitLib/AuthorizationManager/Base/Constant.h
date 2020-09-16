@@ -121,22 +121,22 @@ typedef NS_ENUM(NSInteger, AuthorizationStatus) {
 /**
  Motion
  */
-static NSString *const AuthorizationRequestedMotionKey               = @"_requestedMotion";
+static NSString *const AuthorizationRequestedMotionKey               = @"AT_requestedMotion";
 
 /**
  Notifications
  */
-static NSString *const AuthorizationRequestedNotificationsKey        = @"_requestedNotifications";
+static NSString *const AuthorizationRequestedNotificationsKey        = @"AT_requestedNotifications";
 
 /**
  Bluetooth
  */
-static NSString *const AuthorizationRequestedBluetoothKey            = @"_requestedBluetooth";
+static NSString *const AuthorizationRequestedBluetoothKey            = @"AT_requestedBluetooth";
 
 /**
  Map
  */
-static NSString *const AuthorizationRequestedInUseToAlwaysUpgradeKey = @"_requestedInUseToAlwaysUpgrade";
+static NSString *const AuthorizationRequestedInUseToAlwaysUpgradeKey = @"AT_requestedInUseToAlwaysUpgrade";
 
 #pragma mark - App InfoPlist Key
 static NSString *const AuthorizationInfoPlistKeyCamera               = @"NSCameraUsageDescription";

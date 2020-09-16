@@ -17,35 +17,35 @@
 
 #pragma mark public: general
 void dispatch_throttle(NSTimeInterval threshold, GCDThrottleBlock block) {
-    [GCDThrottle _throttle:threshold type:GCDThrottleTypeDelayAndInvoke queue:THROTTLE_MAIN_QUEUE key:ThreadCallStackSymbol block:block];
+    [GCDThrottle at_throttle:threshold type:GCDThrottleTypeDelayAndInvoke queue:THROTTLE_MAIN_QUEUE key:ThreadCallStackSymbol block:block];
 }
 
 void dispatch_throttle_on_queue(NSTimeInterval threshold, dispatch_queue_t queue, GCDThrottleBlock block) {
-    [GCDThrottle _throttle:threshold type:GCDThrottleTypeDelayAndInvoke queue:queue key:ThreadCallStackSymbol block:block];
+    [GCDThrottle at_throttle:threshold type:GCDThrottleTypeDelayAndInvoke queue:queue key:ThreadCallStackSymbol block:block];
 }
 
 void dispatch_throttle_by_type(NSTimeInterval threshold, GCDThrottleType type, GCDThrottleBlock block) {
-    [GCDThrottle _throttle:threshold type:type queue:THROTTLE_MAIN_QUEUE key:ThreadCallStackSymbol block:block];
+    [GCDThrottle at_throttle:threshold type:type queue:THROTTLE_MAIN_QUEUE key:ThreadCallStackSymbol block:block];
 }
 
 void dispatch_throttle_by_type_on_queue(NSTimeInterval threshold, GCDThrottleType type, dispatch_queue_t queue, GCDThrottleBlock block) {
-    [GCDThrottle _throttle:threshold type:type queue:queue key:ThreadCallStackSymbol block:block];
+    [GCDThrottle at_throttle:threshold type:type queue:queue key:ThreadCallStackSymbol block:block];
 }
 
 + (void)throttle:(NSTimeInterval)threshold block:(GCDThrottleBlock)block {
-    [self _throttle:threshold type:GCDThrottleTypeDelayAndInvoke queue:THROTTLE_MAIN_QUEUE key:ThreadCallStackSymbol block:block];
+    [self at_throttle:threshold type:GCDThrottleTypeDelayAndInvoke queue:THROTTLE_MAIN_QUEUE key:ThreadCallStackSymbol block:block];
 }
 
 + (void)throttle:(NSTimeInterval)threshold queue:(dispatch_queue_t)queue block:(GCDThrottleBlock)block {
-    [self _throttle:threshold type:GCDThrottleTypeDelayAndInvoke queue:queue key:ThreadCallStackSymbol block:block];
+    [self at_throttle:threshold type:GCDThrottleTypeDelayAndInvoke queue:queue key:ThreadCallStackSymbol block:block];
 }
 
 + (void)throttle:(NSTimeInterval)threshold type:(GCDThrottleType)type block:(GCDThrottleBlock)block {
-    [self _throttle:threshold type:type queue:THROTTLE_MAIN_QUEUE key:ThreadCallStackSymbol block:block];
+    [self at_throttle:threshold type:type queue:THROTTLE_MAIN_QUEUE key:ThreadCallStackSymbol block:block];
 }
 
 + (void)throttle:(NSTimeInterval)threshold type:(GCDThrottleType)type queue:(dispatch_queue_t)queue block:(GCDThrottleBlock)block {
-    [self _throttle:threshold type:type queue:queue key:ThreadCallStackSymbol block:block];
+    [self at_throttle:threshold type:type queue:queue key:ThreadCallStackSymbol block:block];
 }
 
 #pragma mark private: general
@@ -58,7 +58,7 @@ void dispatch_throttle_by_type_on_queue(NSTimeInterval threshold, GCDThrottleTyp
     return _sources;
 }
 
-+ (void)_throttle:(NSTimeInterval)threshold type:(GCDThrottleType)type queue:(dispatch_queue_t)queue key:(NSString *)key block:(GCDThrottleBlock)block {
++ (void)at_throttle:(NSTimeInterval)threshold type:(GCDThrottleType)type queue:(dispatch_queue_t)queue key:(NSString *)key block:(GCDThrottleBlock)block {
     if (type == GCDThrottleTypeDelayAndInvoke) {
         NSMutableDictionary *scheduledSources = self.scheduledSources;
         

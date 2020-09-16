@@ -26,7 +26,7 @@ typedef void (^GeneralAuthorizationCompletion) (void);
  @param authorizedHandler 授权后的回调
  @param unAuthorizedHandler 未授权的回调
  */
-- (void)_requestAuthorizationWithAuthorizationType:(AuthorizationType)authorizationType
+- (void)requestAuthorizationWithAuthorizationType:(AuthorizationType)authorizationType
                                    authorizedHandler:(GeneralAuthorizationCompletion)authorizedHandler
                                  unAuthorizedHandler:(GeneralAuthorizationCompletion)unAuthorizedHandler;
 
@@ -38,7 +38,7 @@ typedef void (^GeneralAuthorizationCompletion) (void);
 // @param authorizedHandler 授权后的回调
 // @param unAuthorizedHandler 未授权的回调
 // */
-//- (void)_requestHealthAuthorizationWithShareTypes:(NSSet*)typesToShare
+//- (void)requestHealthAuthorizationWithShareTypes:(NSSet*)typesToShare
 //                                          readTypes:(NSSet*)typesToRead
 //                                  authorizedHandler:(GeneralAuthorizationCompletion)authorizedHandler
 //                                unAuthorizedHandler:(GeneralAuthorizationCompletion)unAuthorizedHandler;
@@ -51,7 +51,7 @@ typedef void (^GeneralAuthorizationCompletion) (void);
 // @param unAuthorizedHandler 未授权的回调
 // @param errorHandler 产生错误的回调
 // */
-//- (void)_requestAccountAuthorizationWithAuthorizationType:(AuthorizationType)authorizationType
+//- (void)requestAccountAuthorizationWithAuthorizationType:(AuthorizationType)authorizationType
 //                                                    options:(NSDictionary *)options
 //                                          authorizedHandler:(GeneralAuthorizationCompletion)authorizedHandler
 //                                        unAuthorizedHandler:(GeneralAuthorizationCompletion)unAuthorizedHandler
