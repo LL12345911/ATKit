@@ -90,7 +90,6 @@
 		4152DE4725109FD000D35582 /* OpenShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDE725109FD000D35582 /* OpenShareManager.m */; };
 		4152DE4C2510B29900D35582 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152DE4B2510B29900D35582 /* CoreGraphics.framework */; };
 		4152DE502510B82D00D35582 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DE4F2510B82D00D35582 /* MBProgressHUD.m */; };
-		41E073DC2511AE87004DBFFE /* HUDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E073DB2511AE87004DBFFE /* HUDTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,8 +278,6 @@
 		4152DE4B2510B29900D35582 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4152DE4E2510B82D00D35582 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4152DE4F2510B82D00D35582 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		41E073DA2511AE7E004DBFFE /* HUDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDTools.h; sourceTree = "<group>"; };
-		41E073DB2511AE87004DBFFE /* HUDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,8 +451,6 @@
 			children = (
 				4152DD1725109FD000D35582 /* Helper.h */,
 				4152DD1A25109FD000D35582 /* Helper.m */,
-				41E073DA2511AE7E004DBFFE /* HUDTools.h */,
-				41E073DB2511AE87004DBFFE /* HUDTools.m */,
 				4152DD1B25109FD000D35582 /* Toast.h */,
 				4152DD1925109FD000D35582 /* Toast.m */,
 			);
@@ -982,7 +977,6 @@
 				4152DDF425109FD000D35582 /* Helper.m in Sources */,
 				4152DDED25109FD000D35582 /* UIImage+ATKit.m in Sources */,
 				4152DE4325109FD000D35582 /* ATMacro.m in Sources */,
-				41E073DC2511AE87004DBFFE /* HUDTools.m in Sources */,
 				4152DE1925109FD000D35582 /* UIViewController+Util.m in Sources */,
 				4152DE0D25109FD000D35582 /* UIBarButtonItem+ATCreate.m in Sources */,
 				4152DE1825109FD000D35582 /* UIViewController+ATKit.m in Sources */,
