@@ -27,6 +27,12 @@ Pod::Spec.new do |s|
     #s.prefix_header_contents = '#import "Atkit.h"'
     s.source_files = 'ATKitLib/Atkit.h'
 
+    s.subspec 'Macro' do |ss|
+   # ss.source_files = 'ATKitLib/AFURL{Request,Response}Serialization.{h,m}'
+    ss.source_files = 'ATKitLib/Macro/*.{h,m}'
+  end
+
+
   s.subspec 'Share' do |ss|
    # ss.source_files = 'ATKitLib/AFURL{Request,Response}Serialization.{h,m}'
     ss.source_files = 'ATKitLib/OpenShareManager.{h,m}'

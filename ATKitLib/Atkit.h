@@ -21,6 +21,8 @@
 #import "Scheduler.h"
 #import "ThreadExplore.h"
 #import "UIKitMacro.h"
+#import "HUDTools.h"
+
 //#import "FoundationMacro.h"
 //#import "FoundationMacro.h"
 

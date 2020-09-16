@@ -372,6 +372,7 @@
 		4152DCFE25109FD000D35582 /* ATKitLib */ = {
 			isa = PBXGroup;
 			children = (
+				4152DE492510A79600D35582 /* Atkit.h */,
 				4152DDA025109FD000D35582 /* DarkMode */,
 				4152DCFF25109FD000D35582 /* EventBus */,
 				4152DDAA25109FD000D35582 /* Foundation */,
@@ -452,11 +453,11 @@
 			isa = PBXGroup;
 			children = (
 				4152DD1725109FD000D35582 /* Helper.h */,
-				4152DD1825109FD000D35582 /* HUDTools.h */,
-				4152DD1925109FD000D35582 /* Toast.m */,
 				4152DD1A25109FD000D35582 /* Helper.m */,
-				4152DD1B25109FD000D35582 /* Toast.h */,
+				4152DD1825109FD000D35582 /* HUDTools.h */,
 				4152DD1C25109FD000D35582 /* HUDTools.m */,
+				4152DD1B25109FD000D35582 /* Toast.h */,
+				4152DD1925109FD000D35582 /* Toast.m */,
 			);
 			path = ToastView;
 			sourceTree = "<group>";
@@ -796,7 +797,6 @@
 				4152DDDE25109FD000D35582 /* ATMacro.h */,
 				4152DDDB25109FD000D35582 /* ATMacro.m */,
 				4152DDDF25109FD000D35582 /* AutoInch.h */,
-				4152DE492510A79600D35582 /* Atkit.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
