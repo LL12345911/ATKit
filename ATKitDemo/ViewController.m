@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Atkit.h"
+
 @interface ViewController ()
 
 @end
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.view.backgroundColor = [UIColor redColor];
+    
 }
 
 
