@@ -32,7 +32,14 @@ CG_INLINE NSString* getCurrentTime(){
 }
 
 #ifdef DEBUG
-#define DebugLog(format, ...) printf("☣️ %s %s(%d行) %s\n",[getCurrentTime() UTF8String],__PRETTY_FUNCTION__,__LINE__,[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )//🌱🌱🌱
+#define DebugLog(format, ...) NSLog(@"☣️ %s(%d行) %s",__PRETTY_FUNCTION__,__LINE__,[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )//🌱🌱🌱
+#else
+#define DebugLog(...)
+#endif
+
+
+#ifdef DEBUG
+#define DebugPrintLog(format, ...) printf("☣️ %s %s(%d行) %s\n",[getCurrentTime() UTF8String],__PRETTY_FUNCTION__,__LINE__,[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )//🌱🌱🌱
 #else
 #define DebugLog(...)
 #endif

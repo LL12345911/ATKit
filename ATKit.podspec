@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
    s.name         = 'ATKit'
-    s.version      = '1.0'
+    s.version      = '1.0.1'
     s.summary      = 'iOS开发基本库'
     s.description  = <<-DESC 
     ***
