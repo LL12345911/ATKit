@@ -21,28 +21,28 @@
 #define  kFormatString(fmt, ...)    [NSString stringWithFormat:fmt,## __VA_ARGS__]
 
 
-CG_INLINE NSString* getCurrentTime(){
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];//AZ  @"yyyy-MM-dd HH:mm:ss.SSSZ"];//
-    NSDate *datenow = [NSDate date];
-    NSTimeInterval a = [datenow timeIntervalSince1970]*1000; // *1000 是精确到毫秒，不乘就是精确到秒
-    NSString *currentTimeString = [formatter stringFromDate:datenow];
-    currentTimeString = [NSString stringWithFormat:@"%@.%ld",currentTimeString,((long)a)%1000000];
-    return currentTimeString;
-}
-
-#ifdef DEBUG
-#define DebugLog(format, ...) NSLog(@"☣️ %s(%d行) %s",__PRETTY_FUNCTION__,__LINE__,[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )//🌱🌱🌱
-#else
-#define DebugLog(...)
-#endif
-
-
-#ifdef DEBUG
-#define DebugPrintLog(format, ...) printf("☣️ %s %s(%d行) %s\n",[getCurrentTime() UTF8String],__PRETTY_FUNCTION__,__LINE__,[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )//🌱🌱🌱
-#else
-#define DebugLog(...)
-#endif
+//CG_INLINE NSString* getCurrentTime(){
+//    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//    [formatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];//AZ  @"yyyy-MM-dd HH:mm:ss.SSSZ"];//
+//    NSDate *datenow = [NSDate date];
+//    NSTimeInterval a = [datenow timeIntervalSince1970]*1000; // *1000 是精确到毫秒，不乘就是精确到秒
+//    NSString *currentTimeString = [formatter stringFromDate:datenow];
+//    currentTimeString = [NSString stringWithFormat:@"%@.%ld",currentTimeString,((long)a)%1000000];
+//    return currentTimeString;
+//}
+//
+////#ifdef DEBUG
+////#define DebugLog(format, ...) NSLog(@"☣️ %@(%d行) %@",__PRETTY_FUNCTION__,__LINE__,[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )//🌱🌱🌱
+////#else
+////#define DebugLog(...)
+////#endif
+//
+//
+//#ifdef DEBUG
+//#define DebugLog(format, ...) printf("☣️ %s %s(%d行) %s\n",[getCurrentTime() UTF8String],__PRETTY_FUNCTION__,__LINE__,[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )//🌱🌱🌱
+//#else
+//#define DebugLog(...)
+//#endif
 
 
 

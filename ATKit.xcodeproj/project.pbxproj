@@ -69,7 +69,6 @@
 		4152DE3225109FD000D35582 /* NSDictionary+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDAD25109FD000D35582 /* NSDictionary+ATKit.m */; };
 		4152DE3325109FD000D35582 /* CoordinateConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDB125109FD000D35582 /* CoordinateConverter.m */; };
 		4152DE3425109FD000D35582 /* CLLocation+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDB325109FD000D35582 /* CLLocation+ATKit.m */; };
-		4152DE3525109FD000D35582 /* PrintJsonLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDB925109FD000D35582 /* PrintJsonLog.m */; };
 		4152DE3625109FD000D35582 /* NSString+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDBE25109FD000D35582 /* NSString+ATKit.m */; };
 		4152DE3725109FD000D35582 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDBF25109FD000D35582 /* Base64.m */; };
 		4152DE3825109FD000D35582 /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DDC025109FD000D35582 /* NSString+Regex.m */; };
@@ -234,8 +233,6 @@
 		4152DDB425109FD000D35582 /* CoordinateConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateConverter.h; sourceTree = "<group>"; };
 		4152DDB525109FD000D35582 /* FoundationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationMacro.h; sourceTree = "<group>"; };
 		4152DDB625109FD000D35582 /* JsonTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonTransform.h; sourceTree = "<group>"; };
-		4152DDB825109FD000D35582 /* PrintJsonLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintJsonLog.h; sourceTree = "<group>"; };
-		4152DDB925109FD000D35582 /* PrintJsonLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintJsonLog.m; sourceTree = "<group>"; };
 		4152DDBB25109FD000D35582 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		4152DDBC25109FD000D35582 /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
 		4152DDBD25109FD000D35582 /* NSString+Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regex.h"; sourceTree = "<group>"; };
@@ -682,7 +679,6 @@
 				4152DDB025109FD000D35582 /* GPSConverter */,
 				4152DDB525109FD000D35582 /* FoundationMacro.h */,
 				4152DDB625109FD000D35582 /* JsonTransform.h */,
-				4152DDB725109FD000D35582 /* DebugLog */,
 				4152DDBA25109FD000D35582 /* NSString */,
 				4152DDC325109FD000D35582 /* NSArray */,
 				4152DDCA25109FD000D35582 /* XTimer */,
@@ -712,15 +708,6 @@
 				4152DDB125109FD000D35582 /* CoordinateConverter.m */,
 			);
 			path = GPSConverter;
-			sourceTree = "<group>";
-		};
-		4152DDB725109FD000D35582 /* DebugLog */ = {
-			isa = PBXGroup;
-			children = (
-				4152DDB825109FD000D35582 /* PrintJsonLog.h */,
-				4152DDB925109FD000D35582 /* PrintJsonLog.m */,
-			);
-			path = DebugLog;
 			sourceTree = "<group>";
 		};
 		4152DDBA25109FD000D35582 /* NSString */ = {
@@ -1033,7 +1020,6 @@
 				4152DE4125109FD000D35582 /* NSObject+ATAlert.m in Sources */,
 				4152DDEC25109FD000D35582 /* UIImage+ATCompress.m in Sources */,
 				4152DDFF25109FD000D35582 /* UIButton+ATImagePosition.m in Sources */,
-				4152DE3525109FD000D35582 /* PrintJsonLog.m in Sources */,
 				4152DDF725109FD000D35582 /* UILabel+Category.m in Sources */,
 				4152DE1225109FD000D35582 /* UIImageView+FaceAwareFill.m in Sources */,
 				4152DE2725109FD000D35582 /* ATWave.m in Sources */,
