@@ -319,8 +319,10 @@
                          CGImageGetHeight(img));
     
     if(pixelBuffer == NULL){
-        DebugLog(@"No pixelbuffer");
-        
+        #ifdef DEBUG
+        NSLog(@"No pixelbuffer");
+             
+        #endif
     }
     
     outBuffer.data = pixelBuffer;
@@ -331,7 +333,10 @@
     error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
     
     if (error) {
-        DebugLog(@"error from convolution %ld", error);
+        #ifdef DEBUG
+      
+        NSLog(@"error from convolution %ld", error);
+        #endif
     }
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();

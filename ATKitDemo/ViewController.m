@@ -19,7 +19,7 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor redColor];
-    DebugLog(@"");
+//    DebugLog(@"");
     
 }
 
