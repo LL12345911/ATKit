@@ -89,6 +89,7 @@
 		4152DE4C2510B29900D35582 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152DE4B2510B29900D35582 /* CoreGraphics.framework */; };
 		4152DE502510B82D00D35582 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4152DE4F2510B82D00D35582 /* MBProgressHUD.m */; };
 		41E074182511BBA2004DBFFE /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E074172511BBA2004DBFFE /* UncaughtExceptionHandler.m */; };
+		41F2547825198DEE00356B9F /* PrintJsonLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F2547725198DEE00356B9F /* PrintJsonLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,6 +276,8 @@
 		4152DE4F2510B82D00D35582 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		41E074162511BBA2004DBFFE /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		41E074172511BBA2004DBFFE /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		41F2547625198DEE00356B9F /* PrintJsonLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintJsonLog.h; sourceTree = "<group>"; };
+		41F2547725198DEE00356B9F /* PrintJsonLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintJsonLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -675,6 +678,7 @@
 		4152DDAA25109FD000D35582 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				41F2547525198DEE00356B9F /* DebugLog */,
 				4152DDAB25109FD000D35582 /* NSDictionary */,
 				4152DDB025109FD000D35582 /* GPSConverter */,
 				4152DDB525109FD000D35582 /* FoundationMacro.h */,
@@ -817,6 +821,15 @@
 				41E074172511BBA2004DBFFE /* UncaughtExceptionHandler.m */,
 			);
 			path = ExceptionHandler;
+			sourceTree = "<group>";
+		};
+		41F2547525198DEE00356B9F /* DebugLog */ = {
+			isa = PBXGroup;
+			children = (
+				41F2547625198DEE00356B9F /* PrintJsonLog.h */,
+				41F2547725198DEE00356B9F /* PrintJsonLog.m */,
+			);
+			path = DebugLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -990,6 +1003,7 @@
 				4152DE2A25109FD000D35582 /* ATStaticView.m in Sources */,
 				4152DDF225109FD000D35582 /* UIScrollView+ATKit.m in Sources */,
 				4152DE0325109FD000D35582 /* UIColor+HexColor.m in Sources */,
+				41F2547825198DEE00356B9F /* PrintJsonLog.m in Sources */,
 				4152DE3A25109FD000D35582 /* NSMutableArray+ATKit.m in Sources */,
 				41E074182511BBA2004DBFFE /* UncaughtExceptionHandler.m in Sources */,
 				4152DCDA25109C7000D35582 /* main.m in Sources */,

@@ -39,6 +39,8 @@
 #import "NSString+Regex.h"
 
 //
+#import "PrintJsonLog.h"
+
 #import "XTimer.h"
 
 #import "CLLocation+ATKit.h"
