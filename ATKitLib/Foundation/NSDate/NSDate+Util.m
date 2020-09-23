@@ -387,6 +387,21 @@ _Pragma("clang diagnostic pop") \
     return ([self isEarlierThanDate:[NSDate date]]);
 }
 
+- (NSDate*)firstTime {
+    int64_t currSecond = self.timeIntervalSince1970;
+    currSecond = currSecond - self.hour * 60 * 60 - self.minute * 60 - self.seconds;
+    NSDate * currDate = [NSDate dateWithTimeIntervalSince1970:currSecond];
+    return currDate;
+}
+
+- (NSDate*)lastTime {
+    int64_t currSecond = self.timeIntervalSince1970;
+    currSecond = currSecond - self.hour * 60 * 60 - self.minute * 60 - self.seconds;
+    currSecond = currSecond + (24 * 60 * 60);
+    currSecond = currSecond - 1;
+    NSDate * currDate = [NSDate dateWithTimeIntervalSince1970:currSecond];
+    return currDate;
+}
 
 #pragma mark - Roles
 - (BOOL) isTypicallyWeekend

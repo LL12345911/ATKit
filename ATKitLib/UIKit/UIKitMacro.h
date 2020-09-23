@@ -17,12 +17,10 @@
 #import "UIImage+Filter.h"
 #import "UIImage+QRCode.h"
 #import "UIImage+Capture.h"
+#import "UIImage+Joint.h"
 
 //UIColor
 #import "UIColor+HexColor.h"
-
-//ToastView
-#import "Toast.h"
 
 //UIImageView
 #import "UIImage+BetterFace.h"
@@ -39,9 +37,6 @@
 #import "UIButton+ATImagePosition.h"
 #import "UIButton+ATIndicator.h"
 #import "ATCustomButton.h"
-
-//Runtime
-#import "RuntimeKit.h"
 
 #import "UICollectionView+Util.h"
 

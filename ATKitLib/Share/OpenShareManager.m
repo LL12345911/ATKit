@@ -8,7 +8,6 @@
 
 #import "OpenShareManager.h"
 #import <Social/Social.h>
-#import "ATMacro.h"
 #import "Toast.h"
 
 //#import "LWShareService.h"
@@ -130,6 +129,16 @@
 }
 
 
+//判断字符串是否为空
+CG_INLINE BOOL ATValidStr(NSString *f){
+    return (f!=nil && [f isKindOfClass:[NSString class]] && ![f isEqualToString:@""]);
+}
+
+//如果 不为空 返回原字符串 为空返回空字符串
+CG_INLINE NSString* kIfNullString(NSString *f){
+    return ATValidStr(f) ? f : @"";
+}
+
 /// 分享
 /// @param linkUrl 链接
 /// @param title 描述
@@ -138,9 +147,9 @@
     NSURL *shareUrl = [NSURL URLWithString:linkUrl];
     NSArray *activityItems;
     if (image) {
-       activityItems = @[kIfNull(title),image,shareUrl];
+       activityItems = @[kIfNullString(title),image,shareUrl];
     }else {
-       activityItems = @[kIfNull(title),shareUrl];
+       activityItems = @[kIfNullString(title),shareUrl];
     }
     //    UIActivity *actice = [[UIActivity alloc] init];
     //    NSArray *activities = @[actice];
@@ -183,9 +192,9 @@
     NSURL *shareUrl = [NSURL URLWithString:linkUrl];
     NSArray *activityItems;
     if (image) {
-       activityItems = @[kIfNull(title),image,shareUrl];
+       activityItems = @[kIfNullString(title),image,shareUrl];
     }else {
-       activityItems = @[kIfNull(title),shareUrl];
+       activityItems = @[kIfNullString(title),shareUrl];
     }
     //    UIActivity *actice = [[UIActivity alloc] init];
     //    NSArray *activities = @[actice];

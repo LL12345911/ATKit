@@ -114,6 +114,21 @@
 ///是否晚是过去
 - (BOOL)isInPast;
 
+/**
+ 得到当天00:00时间
+
+ @return 00:00时间
+ */
+- (NSDate*)firstTime;
+
+/**
+ 得到当天23:59时间
+
+ @return 23:59时间
+ */
+- (NSDate*)lastTime;
+
+
 
 ///是否是工作日
 - (BOOL)isTypicallyWorkday;

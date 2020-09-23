@@ -119,6 +119,10 @@ CG_INLINE NSString* kIfNullForZero(NSString *f){
 #define IsNilOrNull(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
 
 
+/// 判断是否是横屏Judge whether current orientation is landscape.
+CG_INLINE BOOL kIsLandscape(){
+    return (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation]));
+}
 
 
 ///*
